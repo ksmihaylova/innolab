@@ -24,19 +24,22 @@
                         >
                         </v-card-media>
                         <v-card-title >
-                            <div
+                            <v-flex
+                                    xs12
                                     v-if="item.title"
                                     class="headline">
                                 {{ item.title }}
-                            </div>
-                            <v-layout>
-                                <v-flex xs2 v-if="item.icon" >
-                                    <v-icon>{{ item.icon }}</v-icon>
+                            </v-flex>
+                                <v-flex >
+                                    <v-layout>
+                                    <v-flex v-if="item.icon" xs2>
+                                        <v-icon >{{ item.icon }}</v-icon>
+                                    </v-flex>
+                                    <v-flex>
+                                        {{ item.text }}
+                                    </v-flex>
+                                    </v-layout>
                                 </v-flex>
-                                <v-flex>
-                                    {{ item.text }}
-                                </v-flex>
-                            </v-layout>
                         </v-card-title>
                     </v-card>
                 </v-flex>

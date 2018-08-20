@@ -1,7 +1,8 @@
 import {Images} from '@/images';
 
 export const Main = {
-  toolbarTitle: 'Инновационная лаборатория "Новосибирск"',
+  toolbarTitle: 'Инновационная лаборатория',
+  city: 'Новосибирск',
   subtitle: 'Сибирское ГУ Банка России'
 };
 
@@ -87,7 +88,7 @@ export const Task = {
   ]
 };
 export const Contact = {
-  address: 'Адрес: г. Новосибирск, ул.Арбузова, 14 ',
+  address: 'г. Новосибирск, ул.Арбузова, 14 ',
   phone: '(383)-999-99-99',
   email: 'innolab@test.ru'
 };

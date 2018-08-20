@@ -5,6 +5,17 @@
                 wrap align-center
         >
             <v-flex>
+                <v-btn
+                        v-for="(item, index) in menu"
+                        :key="index"
+                        color="white"
+                        flat
+                >
+                    {{ item.title }}
+                </v-btn>
+            </v-flex>
+            <v-spacer></v-spacer>
+            <v-flex text-xs-right>
                 <v-container>
                     <v-card flat>
                         <v-card-text>
@@ -14,17 +25,6 @@
                         </v-card-text>
                     </v-card>
                 </v-container>
-            </v-flex>
-            <v-spacer></v-spacer>
-            <v-flex text-xs-right>
-                <v-btn
-                        v-for="(item, index) in menu"
-                        :key="index"
-                        color="white"
-                        flat
-                >
-                    {{ item.title }}
-                </v-btn>
             </v-flex>
             <v-flex
                     primary
